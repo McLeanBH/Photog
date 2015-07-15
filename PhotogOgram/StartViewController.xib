@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="PhotogOgram" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartViewControllerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="qiI-ck-scj">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3b-Xs-Ndk">
+                    <rect key="frame" x="10" y="546" width="580" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ncb-dt-C12"/>
+                    </constraints>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSignIn:" destination="-1" eventType="touchUpInside" id="Uck-Jb-f3Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXm-Ka-43e">
+                    <rect key="frame" x="10" y="492" width="580" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="XDx-gM-1bz"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Xf8-EL-d64"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="44" id="g26-ZB-PiI"/>
+                    </constraints>
+                    <state key="normal" title="Sign Up">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapSignUp:" destination="-1" eventType="touchUpInside" id="bsP-ZU-cUt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qiI-ck-scj" secondAttribute="bottom" id="18U-H7-RD8"/>
+                <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="YXm-Ka-43e" secondAttribute="trailing" constant="10" id="1Rd-Kb-UVv"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YXm-Ka-43e" secondAttribute="trailing" constant="10" id="2jw-R8-2lL"/>
+                <constraint firstAttribute="trailing" secondItem="YXm-Ka-43e" secondAttribute="trailing" constant="10" id="59S-kA-ny9"/>
+                <constraint firstAttribute="trailing" secondItem="r3b-Xs-Ndk" secondAttribute="trailing" constant="10" id="Odf-sO-KAu"/>
+                <constraint firstItem="YXm-Ka-43e" firstAttribute="leading" relation="lessThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Vs9-eL-qTa"/>
+                <constraint firstItem="r3b-Xs-Ndk" firstAttribute="top" secondItem="YXm-Ka-43e" secondAttribute="bottom" constant="10" id="XoS-lb-prk"/>
+                <constraint firstItem="r3b-Xs-Ndk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="a7D-7m-Qte"/>
+                <constraint firstItem="YXm-Ka-43e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="aCW-Fl-wY6"/>
+                <constraint firstItem="r3b-Xs-Ndk" firstAttribute="top" secondItem="YXm-Ka-43e" secondAttribute="bottom" constant="10" id="cof-up-nEr"/>
+                <constraint firstAttribute="bottom" secondItem="r3b-Xs-Ndk" secondAttribute="bottom" constant="10" id="d7B-98-rbN"/>
+                <constraint firstItem="YXm-Ka-43e" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="eEo-Pq-IUR"/>
+                <constraint firstItem="qiI-ck-scj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ffC-HA-MxY"/>
+                <constraint firstItem="qiI-ck-scj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="goG-JL-tUK"/>
+                <constraint firstAttribute="trailing" secondItem="qiI-ck-scj" secondAttribute="trailing" id="pc3-Es-Iq3"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="StartViewControllerBackground" width="320" height="480"/>
+    </resources>
+</document>

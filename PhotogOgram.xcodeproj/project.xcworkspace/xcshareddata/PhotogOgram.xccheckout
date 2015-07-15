@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FB51539A-8A43-42CB-9BF4-8F8AC6D834EB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PhotogOgram</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>24B5E977E470D37C9FA7DA56090655533D00E1EF</key>
+		<string>github.com:McLeanBH/PhotogOgram.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PhotogOgram.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>24B5E977E470D37C9FA7DA56090655533D00E1EF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:McLeanBH/PhotogOgram.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>24B5E977E470D37C9FA7DA56090655533D00E1EF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>24B5E977E470D37C9FA7DA56090655533D00E1EF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhotogOgram</string>
+		</dict>
+	</array>
+</dict>
+</plist>
