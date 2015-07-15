@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotogOgram/AuthViewController.swift"
-            timestampString = "458686842.65426"
+            timestampString = "458687836.722956"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "authenticate()"
             landmarkType = "5">
          </BreakpointContent>
