@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53057371B5722A00074F6F9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53057361B5722A00074F6F9 /* TabBarController.swift */; };
 		B53467051B56FF3300917906 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53467041B56FF3300917906 /* UIViewController+Extensions.swift */; };
 		B53FBA511B54ACD900A9599D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FBA4F1B54ACD900A9599D /* AuthViewController.swift */; };
 		B53FBA521B54ACD900A9599D /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53FBA501B54ACD900A9599D /* AuthViewController.xib */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B53057361B5722A00074F6F9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B53467041B56FF3300917906 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B53FBA4F1B54ACD900A9599D /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B53FBA501B54ACD900A9599D /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				B5F461201B5496BF0087F873 /* StartViewController.xib */,
 				B53FBA4F1B54ACD900A9599D /* AuthViewController.swift */,
 				B53FBA501B54ACD900A9599D /* AuthViewController.xib */,
+				B53057361B5722A00074F6F9 /* TabBarController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				B5DEE1801B56F3FE0040289F /* String+Extensions.swift in Sources */,
 				B5F460E61B5486640087F873 /* AppDelegate.swift in Sources */,
 				B53467051B56FF3300917906 /* UIViewController+Extensions.swift in Sources */,
+				B53057371B5722A00074F6F9 /* TabBarController.swift in Sources */,
 				B53FBA511B54ACD900A9599D /* AuthViewController.swift in Sources */,
 				B5F461211B5496BF0087F873 /* StartViewController.swift in Sources */,
 			);

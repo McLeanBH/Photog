@@ -33,10 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         {
             navigationController.viewControllers = [startViewController]
         }
+       
         else
         {
-            // TODO: Present UI for logging in or creating account
-            println("we have a user!")
+            var tabBarController = TabBarController()
+            navigationController.viewControllers = [startViewController, tabBarController]
         }
         
         self.window!.rootViewController = navigationController
