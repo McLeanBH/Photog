@@ -10,8 +10,15 @@ import UIKit
 import Parse
 import Bolts
 
+enum AuthMode
+{
+    case SignIn
+    case SignUp
+}
+
 class AuthViewController: UIViewController, UITextFieldDelegate {
     
+    var authMode: AuthMode = AuthMode.SignUp
     @IBOutlet var emailTextField: UITextField?
     @IBOutlet var passwordTextField: UITextField?
 
@@ -84,73 +91,31 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
             var alertController = UIAlertController(title: "Uh Oh!", message: "Sign in failed.", preferredStyle: UIAlertControllerStyle.Alert)
             alertController.addAction(UIAlertAction(title: "Okay", style: .Default, handler: nil))
             self.presentViewController(alertController, animated: true, completion: nil)
+            
             return
+        }
+        
+        if authMode == .SignIn
+        {
+            self.signIn(email!, password: password!)
+        }
+        else
+        {
+            self.signUp(email!, password: password!)
         }
     }
 
-}
-
-
-
-
-//        if authMode == .SignIn
-//        {
-//            self.signIn(email!, password: password!)
-//        }
-//        else
-//        {
-//            self.signUp(email!, password: password!)
-//        }
-
-//    func signIn(email: String, password: String)
-//    {
-//        PFUser.logInWithUsernameInBackground(email, password: password) {
-//            (user: PFUser!, error: NSError!) -> Void in
-//            
-//            if let constUser = user
-//            {
-//                var tabBarController = tabBarController()
-//                self.navigationController?.pushViewController(tabBarController, animated: true)
-//            }
-//            else
-//            {
-//                println("sign in failue! (alert the user)")
-//            }
-//        }
-//    }
+    func signIn(email: String, password: String)
+    {
+        println("sign in")
+    }
     
-//    func signUp(email: String, password: String)
-//    {
-//        var user = PFUser()
-//        user.username = email
-//        user.email = email
-//        user.password = password
-//        
-//        user.signUpInBackgroundWithBlock {
-//            (succeeded: Bool!, error: NSError!) -> Void in
-//            
-//            if let constError = error
-//            {
-//                println("sign up failure! (alert the user)")
-//                return
-//            }
-//            
-//            // New user follows himself
-//            NetworkManager.sharedInstance.follow(user, completionHandler: {
-//                (error) -> () in
-//                
-//                if let constError = error
-//                {
-//                    println("Unable for user to follow herself")
-//                    return
-//                }
-//                
-//                var tabBarController = TabBarController()
-//                self.navigationController?.pushViewController(tabBarController, animated: true)
-//            })
-//        }
-//    }
-
+    func signUp(email: String, password: String)
+    {
+        println("sign up")
+    }
+    
+}
 
 
 
