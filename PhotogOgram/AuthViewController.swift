@@ -76,12 +76,19 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     
     func authenticate()
     {
-        println("Authenticate!")
+        var email = self.emailTextField?.text
+        var password = self.passwordTextField?.text
+        
+        if (email?.isEmpty == true || password?.isEmpty == true || email?.isEmailAddress() == false)
+        {
+            //alert the user
+            println("no good")
+            return
+        }
+        
+        // otherwise, authenticate
     }
-
 }
-
-
 
 
 

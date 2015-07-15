@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B53FBA511B54ACD900A9599D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FBA4F1B54ACD900A9599D /* AuthViewController.swift */; };
 		B53FBA521B54ACD900A9599D /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53FBA501B54ACD900A9599D /* AuthViewController.xib */; };
+		B5DEE1801B56F3FE0040289F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEE17F1B56F3FE0040289F /* String+Extensions.swift */; };
 		B5F460E61B5486640087F873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F460E51B5486640087F873 /* AppDelegate.swift */; };
 		B5F460ED1B5486640087F873 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F460EC1B5486640087F873 /* Images.xcassets */; };
 		B5F460F01B5486640087F873 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F460EE1B5486640087F873 /* LaunchScreen.xib */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		B53FBA4F1B54ACD900A9599D /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B53FBA501B54ACD900A9599D /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		B5DEE17F1B56F3FE0040289F /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B5F460E01B5486640087F873 /* PhotogOgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotogOgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F460E41B5486640087F873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5F460E51B5486640087F873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		B5DEE17E1B56F3420040289F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5DEE17F1B56F3FE0040289F /* String+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		B5F460D71B5486640087F873 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F460E51B5486640087F873 /* AppDelegate.swift */,
+				B5DEE17E1B56F3420040289F /* Extensions */,
 				B53FBA531B54AD0500A9599D /* ViewControllers */,
 				B5F460EC1B5486640087F873 /* Images.xcassets */,
 				B5F460EE1B5486640087F873 /* LaunchScreen.xib */,
@@ -284,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DEE1801B56F3FE0040289F /* String+Extensions.swift in Sources */,
 				B5F460E61B5486640087F873 /* AppDelegate.swift in Sources */,
 				B53FBA511B54ACD900A9599D /* AuthViewController.swift in Sources */,
 				B5F461211B5496BF0087F873 /* StartViewController.swift in Sources */,
