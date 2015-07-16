@@ -51,6 +51,7 @@ class TabBarController: UITabBarController {
     override func viewWillAppear(animated: Bool)
     {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationItem.title = "Photog"
     }
 
@@ -61,10 +62,9 @@ class TabBarController: UITabBarController {
     
     func didTapSignOut(sender: AnyObject)
     {
-//        PFUser.logout()
-//        self.navigationController?.popToRootViewControllerAnimated(true)
-//        self.navigationController?.setNavigationBarHidden(false, animated: true)
-
+        PFUser.logOut()
+        self.navigationController?.popToRootViewControllerAnimated(true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
 
