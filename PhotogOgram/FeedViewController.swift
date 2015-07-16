@@ -21,6 +21,9 @@ class FeedViewController: UIViewController, UITableViewDataSource
         
         var nib = UINib(nibName: "PostCell", bundle: nil)
         self.tableView?.registerNib(nib, forCellReuseIdentifier: "PostCellIdentifier")
+        
+        tableView?.estimatedRowHeight = 100
+        tableView?.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +31,7 @@ class FeedViewController: UIViewController, UITableViewDataSource
         // Dispose of any resources that can be recreated.
     }
 
-//    var items ()
+//    var items ;()
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
