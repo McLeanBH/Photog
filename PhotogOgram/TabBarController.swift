@@ -21,7 +21,7 @@ class TabBarController: UITabBarController {
         profileViewController.view.backgroundColor = UIColor.yellowColor()
         
         var findPeopleViewController = UIViewController()
-        findPeopleViewController.view.backgroundColor = UIColor.blackColor()
+        findPeopleViewController.view.backgroundColor = UIColor.redColor()
         
         var cameraViewController = UIViewController()
         cameraViewController.view.backgroundColor = UIColor.purpleColor()
