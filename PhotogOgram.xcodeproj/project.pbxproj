@@ -11,6 +11,10 @@
 		B53467051B56FF3300917906 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53467041B56FF3300917906 /* UIViewController+Extensions.swift */; };
 		B53FBA511B54ACD900A9599D /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53FBA4F1B54ACD900A9599D /* AuthViewController.swift */; };
 		B53FBA521B54ACD900A9599D /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53FBA501B54ACD900A9599D /* AuthViewController.xib */; };
+		B5BBADFC1B57F56E00B6A8F1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BBADFA1B57F56E00B6A8F1 /* FeedViewController.swift */; };
+		B5BBADFD1B57F56E00B6A8F1 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5BBADFB1B57F56E00B6A8F1 /* FeedViewController.xib */; };
+		B5BBAE001B57F84700B6A8F1 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BBADFE1B57F84700B6A8F1 /* PostCell.swift */; };
+		B5BBAE011B57F84700B6A8F1 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5BBADFF1B57F84700B6A8F1 /* PostCell.xib */; };
 		B5DEE1801B56F3FE0040289F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEE17F1B56F3FE0040289F /* String+Extensions.swift */; };
 		B5E080551B57F2AC00F2C60B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E080541B57F2AC00F2C60B /* NetworkManager.swift */; };
 		B5F460E61B5486640087F873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F460E51B5486640087F873 /* AppDelegate.swift */; };
@@ -48,6 +52,10 @@
 		B53467041B56FF3300917906 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B53FBA4F1B54ACD900A9599D /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		B53FBA501B54ACD900A9599D /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		B5BBADFA1B57F56E00B6A8F1 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		B5BBADFB1B57F56E00B6A8F1 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		B5BBADFE1B57F84700B6A8F1 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B5BBADFF1B57F84700B6A8F1 /* PostCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		B5DEE17F1B56F3FE0040289F /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		B5E080541B57F2AC00F2C60B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B5F460E01B5486640087F873 /* PhotogOgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotogOgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +120,10 @@
 				B53FBA4F1B54ACD900A9599D /* AuthViewController.swift */,
 				B53FBA501B54ACD900A9599D /* AuthViewController.xib */,
 				B53057361B5722A00074F6F9 /* TabBarController.swift */,
+				B5BBADFA1B57F56E00B6A8F1 /* FeedViewController.swift */,
+				B5BBADFB1B57F56E00B6A8F1 /* FeedViewController.xib */,
+				B5BBADFE1B57F84700B6A8F1 /* PostCell.swift */,
+				B5BBADFF1B57F84700B6A8F1 /* PostCell.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53FBA521B54ACD900A9599D /* AuthViewController.xib in Resources */,
+				B5BBAE011B57F84700B6A8F1 /* PostCell.xib in Resources */,
+				B5BBADFD1B57F56E00B6A8F1 /* FeedViewController.xib in Resources */,
 				B5F460F01B5486640087F873 /* LaunchScreen.xib in Resources */,
 				B5F460ED1B5486640087F873 /* Images.xcassets in Resources */,
 				B5F461221B5496BF0087F873 /* StartViewController.xib in Resources */,
@@ -309,7 +323,9 @@
 				B53467051B56FF3300917906 /* UIViewController+Extensions.swift in Sources */,
 				B5E080551B57F2AC00F2C60B /* NetworkManager.swift in Sources */,
 				B53057371B5722A00074F6F9 /* TabBarController.swift in Sources */,
+				B5BBAE001B57F84700B6A8F1 /* PostCell.swift in Sources */,
 				B53FBA511B54ACD900A9599D /* AuthViewController.swift in Sources */,
+				B5BBADFC1B57F56E00B6A8F1 /* FeedViewController.swift in Sources */,
 				B5F461211B5496BF0087F873 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
