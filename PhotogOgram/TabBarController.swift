@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class TabBarController: UITabBarController {
 
@@ -42,6 +43,8 @@ class TabBarController: UITabBarController {
         self.edgesForExtendedLayout = UIRectEdge.None
         self.navigationItem.hidesBackButton = true
         self.tabBar.translucent = false
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .Done, target: self, action: "didTapSignOut:")
 
     }
     
@@ -54,6 +57,14 @@ class TabBarController: UITabBarController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func didTapSignOut(sender: AnyObject)
+    {
+//        PFUser.logout()
+//        self.navigationController?.popToRootViewControllerAnimated(true)
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
+
     }
 
 
