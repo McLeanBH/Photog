@@ -25,6 +25,18 @@ class FeedViewController: UIViewController, UITableViewDataSource
         tableView?.estimatedRowHeight = 100
         tableView?.rowHeight = UITableViewAutomaticDimension
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NetworkManager.sharedInstance.fetchFeed {
+            (objects, error) -> () in
+            
+            println(objects)
+            println(error)
+            
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
